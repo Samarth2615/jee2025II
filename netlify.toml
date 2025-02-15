@@ -1,0 +1,10 @@
+# netlify.toml
+
+[build]
+  functions = "netlify/functions"
+  publish = "./"  # Root directory since index.html is here
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
